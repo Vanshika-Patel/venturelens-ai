@@ -17,7 +17,7 @@ stage = st.selectbox("Stage", ["Idea", "MVP", "Revenue"])
 
 
 def query_huggingface(prompt):
-    API_URL = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"
+    API_URL = "https://router.huggingface.co/hf-inference/models/mistralai/Mistral-7B-Instruct-v0.2"
 
     headers = {
         "Authorization": f"Bearer {st.secrets['HF_API_KEY']}"
